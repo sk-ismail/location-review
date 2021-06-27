@@ -2,28 +2,23 @@ const express=require('express')
 const app=express()
 const cors=require('cors')
 const mongoose=require('mongoose')
+const path=require('path')
+const env=require('dotenv')
 
-const url='mongodb+srv://irfan:Irfan@2102@cluster0.gikhu.mongodb.net/location-review?retryWrites=true&w=majority'
+env.config();
 
 //const db=mongoose.connection;
 
 app.use(cors({origin: '*'}))
 
-mongoose.connect(url,
+mongoose.connect(process.env.MONGODB_URL,
     { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 
 const db=mongoose.connection;
 
+app.use(express.static(path.join(__dirname, '../frontend')))
 
-app.get('/', (req,res)=>{
-  res.send('HI');
-//  userdata.create({
-//      Username: "Irfan",
-//      Password: 'Irfan@2102'
-//  })
-
-  res.end()
-})
+ 
 
 app.listen(3000, ()=>{
     console.log("listening...")
