@@ -5,6 +5,9 @@ const mongoose=require('mongoose')
 const path=require('path')
 const env=require('dotenv')
 
+
+
+
 env.config();
 
 //const db=mongoose.connection;
@@ -29,11 +32,5 @@ db.once('open', ()=>{
     console.log('connected')
 })
 
-const Schema=new mongoose.Schema({
-    Username : { type: String, required: true, unique: true},
-    Password: { type: String, required: true}
-}, {
-    collection: 'data'
-})
 
-const userdata=mongoose.model('Schema', Schema)
+
