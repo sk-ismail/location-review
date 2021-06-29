@@ -5,28 +5,28 @@ const userSchema=new mongoose.Schema({
         type: String,
         min: 3,
         max: 30,
-        required,
+        require: true,
         unique: true
     },
     email:{
         type: String,
         min: 3,
         max: 30,
-        required,
+        require: true,
         unique: true
     },
     password:{
         type: String,
         min: 3,
-        max: 30,
-        required,
-        unique: true
+       
+        require: true,
+        
     }
 
-},{ collection: "userData", timestamps: true})
+},{ timestamps: true})
 
 
-const userModel=mongoose.model("userSchema", userSchema)
+const userModel=mongoose.model("userData", userSchema)
 
 
 module.exports = userModel;
