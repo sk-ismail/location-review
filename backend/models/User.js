@@ -4,21 +4,20 @@ const userSchema=new mongoose.Schema({
     username:{
         type: String,
         min: 3,
-        max: 30,
+        
         require: true,
         unique: true
     },
     email:{
         type: String,
         min: 3,
-        max: 30,
+       
         require: true,
         unique: true
     },
     password:{
         type: String,
         min: 3,
-       
         require: true,
         
     }

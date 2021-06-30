@@ -5,6 +5,7 @@ const mongoose=require('mongoose')
 const path=require('path')
 const env=require('dotenv')
 const userRouter=require('./routes/user');
+const pinRouter=require('./routes/pin');
 
 
 
@@ -25,13 +26,19 @@ db.once('open', ()=>{
 })
 
 app.use(express.static(path.join(__dirname, '../frontend')))
+app.use(express.json());
 
 app.use('/api/user', userRouter)
+app.use('/api/pin', pinRouter)
 
 app.listen(3000, ()=>{
     console.log("listening to port: 3000...")
 })
 
+app.post('/api/test', (req,res)=>{
+    console.log(req.body)
+    res.status(200).json({status: "ok", data: req.body})
+})
 
 
 
