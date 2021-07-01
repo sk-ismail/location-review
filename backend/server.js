@@ -31,7 +31,7 @@ app.use(express.json());
 app.use('/api/user', userRouter)
 app.use('/api/pin', pinRouter)
 
-app.listen(3000, ()=>{
+app.listen(3001, ()=>{
     console.log("listening to port: 3000...")
 })
 

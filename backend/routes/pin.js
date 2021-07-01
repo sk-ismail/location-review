@@ -29,7 +29,7 @@ router.get('/', async (req, res)=>{
         const pindata=await Pin.find().lean()
 
         if(pindata){
-            console.log('found pins')
+            //console.log('found pins')
             res.status(200).json({status: 'ok', data: pindata})
         }
         else{

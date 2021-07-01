@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0",
     "react": "^17.0.2",
@@ -20,7 +21,6 @@
     "start": "env-cmd -f .env react-scripts start",
     "build:staging": "env-cmd -f .env react-scripts build",
     "build:production": "env-cmd -f .env react-scripts build",
-    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy" : "http://localhost:3000/api"
+  "proxy": "http://localhost:3001/api"
 }
