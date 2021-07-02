@@ -6,26 +6,26 @@ const pinSchema=new mongoose.Schema({
         min: 3,
         max:20,
         require: true,
-        unique: true
+        
     },
     location:{
         type: String,
         min: 3,
-        max:20,
+       
         require: true,
-        unique: true
+        
     },
     title:{
         type: String,
         min: 3,
-       max:20,
+       
         require: true,
         
     },
     description:{
         type: String,
         min: 3,
-        max:150,
+        
         require: true,
         
     },

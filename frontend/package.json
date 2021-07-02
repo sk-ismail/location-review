@@ -15,6 +15,8 @@
     "react-dom": "^17.0.2",
     "react-map-gl": "^6.1.16",
     "react-scripts": "4.0.3",
+    "request-promise": "^4.2.6",
+    "timeago.js": "^4.0.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

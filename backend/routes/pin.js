@@ -2,10 +2,11 @@ const Pin=require('../models/Pin');
 const router=require('express').Router();
 
 router.post('/', async (req, res)=>{
-    console.log(req.body)
-      
+    //console.log(req.body)
+      //const newPin=new Pin(req.body)
     try{
        const data=req.body;
+       //console.log(data)
         const pindata= await Pin.create({
             username : data.username ,
             title: data.title,
@@ -15,9 +16,12 @@ router.post('/', async (req, res)=>{
             lat: data.lat,
             long: data.long
         }) 
-     
-         res.json(pindata)
+        // const savedPin = await newPin.save();
+        // res.status(200).json(savedPin);
+         res.status(200).json({staus: "ok", data: pindata})
     }catch (err){
+        console.log(err)
+        //console.log('dola')
         res.status(500).json({status: 'error'})
     }
 })
@@ -30,7 +34,7 @@ router.get('/', async (req, res)=>{
 
         if(pindata){
             //console.log('found pins')
-            res.status(200).json({status: 'ok', data: pindata})
+            res.status(200).json({status: 'ok', pindata})
         }
         else{
             console.log('not found')
