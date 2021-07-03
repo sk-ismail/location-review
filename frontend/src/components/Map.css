@@ -1,0 +1,107 @@
+.popupCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(116, 200, 164);
+  border-radius: 5px;
+  justify-content: space-around;
+  width: 200px;
+  padding: 7px;
+}
+.popupCard1 {
+  border-radius: 10px;
+}
+
+.usernameCard {
+  display: flex;
+  flex-direction: column;
+
+  padding: px;
+}
+
+.usernameCardRating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+}
+.labelCard {
+}
+
+label {
+  border-bottom: 0.5px bold tomato;
+  width: max-content;
+  color: tomato;
+  font-weight: bolder;
+}
+
+.starCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBtn {
+  background: none;
+  border: none;
+
+  background-color: tomato;
+  font-size: larger;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.headBtns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headBtns button {
+  margin: 10px;
+}
+
+.btnLogin {
+  background: none;
+  border: none;
+  padding: 10px;
+  background-color: rgb(255, 4, 4);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btnRegister {
+  background: none;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.logoutBtn {
+  border: none;
+  background: none;
+  background-color: tomato;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.logoutDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
