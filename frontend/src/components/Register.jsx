@@ -23,7 +23,7 @@ const passwordRef= useRef(null)
               password: passwordRef.current.value
           }  
           try {
-            await axios.post('/user/register', newUser);
+            await axios.post('https://location-review-api.herokuapp.com/api/user/register', newUser);
             seterror(false)
             setsuccessful(true)
           } catch (error) {

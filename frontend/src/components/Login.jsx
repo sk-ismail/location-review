@@ -23,7 +23,7 @@ const passwordRef= useRef(null)
               password: passwordRef.current.value
           }  
           try {
-           const res= await axios.post('/user/login', User);
+           const res= await axios.post('https://location-review-api.herokuapp.com/api/user/login', User);
            console.log(res.data)
            
            mystorage.setItem('user', res.data.username);

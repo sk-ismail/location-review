@@ -35,7 +35,7 @@ const Map = () => {
       const [showLogin, setshowLogin] = useState(false)
       const [currentUser, setcurrentUser] = useState(mystorage.getItem("user"))
       const fetchData= async ()=>{
-            await axios.get('/pin')
+            await axios.get('https://location-review-api.herokuapp.com/api/pin')
             .then(({ data })=>{ 
               setPin(data.pindata)
               //console.log(data.pindata)
@@ -74,7 +74,7 @@ const Map = () => {
         }
         //console.log(newPin)
         try {
-          const fetchData= await axios.post('/pin', newPin);
+          const fetchData= await axios.post('https://location-review-api.herokuapp.com/api/pin', newPin);
           //console.log(fetchData.data.data)
           setPin([...pin,fetchData.data.data])
           setnewLocation(null)
