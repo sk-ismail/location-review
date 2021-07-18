@@ -27,17 +27,17 @@ router.post('/register',async (req,res)=>{
 
 router.post('/login',async (req,res)=>{
    const { username, email, password}=req.body;
-    console.log(username, password)
+    //console.log(username, password)
     try{
         const user=await User.findOne({username}).lean()
          if(user){
-            console.log("found username")
+            //console.log("found username")
             if(await  bcrypt.compare(password, user.password)){
-                console.log("password found")
+                //console.log("password found")
                 res.json({status: "ok", messgae: "login", username: username})
             }
             else{
-                console.log('error in password laude!')
+                //console.log('error in password laude!')
                 res.status(500).json({status: "error", message: "Invalid credentials"})
             }
 
