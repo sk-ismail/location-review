@@ -10,7 +10,7 @@ const [error, seterror] = useState(false)
 
 const usernameRef = useRef(null)
 
-const emailRef = useRef(null)
+//const emailRef = useRef(null)
 const passwordRef= useRef(null)
 
 

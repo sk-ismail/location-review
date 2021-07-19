@@ -30,7 +30,7 @@ const Map = () => {
       const [location, setlocation] = useState(null);
       const [rating, setrating] = useState(0);
       const [description, setdescription] = useState([]);
-      const [userName, setuserName] = useState('')
+      //const [userName, setuserName] = useState('')
       const [showRegister, setshowRegister] = useState(false)
       const [showLogin, setshowLogin] = useState(false)
       const [currentUser, setcurrentUser] = useState(mystorage.getItem("user"))
@@ -179,8 +179,7 @@ const Map = () => {
          <option>4</option>
          <option>5</option>
        </select>
-       <label>Created By</label>
-       <span>{currentUser.username}</span>
+
        <button className='formBtn' type='submit'>Submit</button>
      </form>
    </div>
