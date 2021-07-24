@@ -9,6 +9,12 @@
 }
 .popupCard1 {
   border-radius: 10px;
+  z-index: 1000;
+}
+.mapboxgl-popup-close-button {
+  font-size: 2rem;
+  color: black;
+  margin: 5px;
 }
 
 .usernameCard {
