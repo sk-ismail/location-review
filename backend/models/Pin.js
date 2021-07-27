@@ -38,14 +38,14 @@ const pinSchema=new mongoose.Schema({
     },
     lat:{
         type: Number,
-        min: 0,
+        
         
         require: true,
         
     },
     long:{
         type: Number,
-        min: 0,
+        
         
         require: true,
         
