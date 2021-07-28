@@ -96,7 +96,7 @@ const Map = () => {
     <ReactMapGL
       {...viewport}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
-      mapStyle='mapbox://styles/sk-ismail/ckqjtp95c0ls317mkbqhic7cz'
+      mapStyle='mapbox://styles/sk-ismail/ckrn06bnb29yb19o1n4mgfm5l'
       onViewportChange={nextViewport => setViewport(nextViewport)}
       onDblClick={(e)=>handleDoubleClick(e)}
       transitionDuration={300}
