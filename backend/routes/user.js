@@ -4,13 +4,13 @@ const bcrypt=require('bcrypt')
 
 router.post('/register',async (req,res)=>{
    
-    console.log(req.body)
+    //console.log(req.body)
     try{
            
         const salt= await bcrypt.genSalt(10);
         const hashedPassword=await bcrypt.hash(req.body.password,salt);
         
-        const newUser= await User.create({
+       const newUser= await User.create({
             username: req.body.username,
             email: req.body.email,
             password: hashedPassword
@@ -18,8 +18,8 @@ router.post('/register',async (req,res)=>{
 
         res.status(200).json(newUser)
     }catch(err){
-        console.log(err)
-           res.status(500).json({status: 'error'})
+        //console.log(err)
+           res.status(500).json({status: 'error in register'})
     }
 
 
