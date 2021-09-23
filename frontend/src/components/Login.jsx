@@ -44,10 +44,15 @@ const passwordRef= useRef(null)
 
     return (
         <div className="LoginApp">
+            
             <div className='logoLogin'>
              <Room/>
-             Location-Review
+             <div>Location-Review</div>
+             <br/>
+             
+             
             </div>
+            <div><h4>Login</h4></div>
             <form onSubmit={(e)=>handleSubmit(e)}>
             <input className='inputUsername'  type='text' placeholder='Enter Username' ref={usernameRef}/>
                 

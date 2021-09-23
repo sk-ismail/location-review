@@ -193,12 +193,15 @@ const Map = () => {
 
   { currentUser ? (<div className='logoutDiv'><button className="logoutBtn" onClick={()=>handleLogut()}>Logout</button></div>):( 
   <div className="headBtns">
-   <button className='btnLogin'    onClick={()=>setshowLogin((prev)=> !prev)} >LogIn</button>
-   <button className='btnRegister' onClick={()=>setshowRegister(true)} >Register</button>
+   <button className='btnLogin'    onClick={()=>{setshowLogin((prev)=> !prev)
+                                                  setshowRegister(false)  }} >LogIn</button>
+    <button className='btnRegister' onClick={()=>{
+                                                   setshowRegister((prev)=>!prev) 
+                                                    setshowLogin(false)  }} >Register</button>
    </div>)}
 
   
-  {showRegister && <Register setshowRegister={setshowRegister} />}
+  {showRegister && <Register setshowRegister={setshowRegister} /> }
   {showLogin && <Login setshowLogin={setshowLogin} mystorage={mystorage} setcurrentUser={setcurrentUser}/>}
  
 
