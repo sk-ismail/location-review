@@ -90,6 +90,9 @@ const Map = () => {
         mystorage.removeItem("user")
         setcurrentUser(null)
       }
+      const alertMsg=()=>{
+        alert("Login/SignUp Before proceeding")
+      }
     return (
         <div>
               <>
@@ -204,7 +207,7 @@ const Map = () => {
   {showRegister && <Register setshowRegister={setshowRegister} /> }
   {showLogin && <Login setshowLogin={setshowLogin} mystorage={mystorage} setcurrentUser={setcurrentUser}/>}
  
-
+  {!currentUser && alertMsg()}
       
       </ReactMapGL>
   
