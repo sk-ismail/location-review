@@ -207,7 +207,7 @@ const Map = () => {
   {showRegister && <Register setshowRegister={setshowRegister} /> }
   {showLogin && <Login setshowLogin={setshowLogin} mystorage={mystorage} setcurrentUser={setcurrentUser}/>}
  
-  {!currentUser && alertMsg()}
+  {/*!currentUser && alertMsg()*/}
       
       </ReactMapGL>
   
