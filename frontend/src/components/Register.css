@@ -16,9 +16,11 @@
   justify-content: flex-start;
   align-items: center;
 }
-
+.titletextR {
+  margin: 5px;
+}
 form input {
-  margin: 0px;
+  margin: 10px;
   padding: 5px;
   border: none;
   border-bottom: 1px black solid;
@@ -43,6 +45,7 @@ form input {
 
 form button {
   border: none;
+  margin-top: 12px;
   background: none;
   background-color: tomato;
   color: black;

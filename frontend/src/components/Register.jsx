@@ -42,7 +42,7 @@ const passwordRef= useRef(null)
              <Room/>
              Location-Review
             </div>
-            <div><h4>Register</h4></div>
+            <div><h4 className='titletextR'>Register</h4></div>
             <form onSubmit={(e)=>handleSubmit(e)}>
                 <input className='inputUsername'  type='text' placeholder='Enter Username' ref={usernameRef}/>
                 <input className='inputEmail' type='email' placeholder='Enter Email' ref={emailRef} />

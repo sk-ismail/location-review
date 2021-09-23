@@ -52,7 +52,7 @@ const passwordRef= useRef(null)
              
              
             </div>
-            <div><h4>Login</h4></div>
+            <div className='titletext'><h4>Login</h4></div>
             <form onSubmit={(e)=>handleSubmit(e)}>
             <input className='inputUsername'  type='text' placeholder='Enter Username' ref={usernameRef}/>
                 
