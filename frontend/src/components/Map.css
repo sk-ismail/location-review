@@ -97,6 +97,7 @@ form {
 }
 
 .logoutBtn {
+  cursor: pointer;
   border: none;
   background: none;
   background-color: tomato;
