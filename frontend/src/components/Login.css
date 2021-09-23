@@ -17,7 +17,7 @@
   align-items: center;
 }
 .titletext {
-  margin: -10px;
+  margin: -15px;
 }
 .LoginApp form input {
   margin: 8px;
@@ -34,7 +34,7 @@
 
 .LoginApp form button {
   border: none;
-  margin: 2px;
+  margin: 5px;
   margin-bottom: 0px;
   background: none;
   background-color: tomato;
